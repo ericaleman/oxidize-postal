@@ -1,0 +1,43 @@
+[project]
+name = "oxidize-postal"
+version = "0.1.0"
+description = "High-performance postal address parser and normalizer using libpostal with Rust bindings"
+authors = [
+    {name = "Eric Aleman", email = "eric@example.com"}
+]
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+keywords = ["address", "postal", "parsing", "normalization", "libpostal", "rust", "performance"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Rust",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Text Processing",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+
+[project.urls]
+Repository = "https://github.com/ericaleman/oxidize-postal"
+
+[tool.maturin]
+module-name = "oxidize_postal"
+manifest-path = "oxidize-postal/Cargo.toml"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.4.1"
+pytest-benchmark = "^5.1.0"
+psutil = "^7.0.0"
+pytest-cov = "^6.2.1"
+pytest-mock = "^3.14.1"
+
+[build-system]
+requires = ["maturin>=1.9.3"]
+build-backend = "maturin"
