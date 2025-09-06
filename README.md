@@ -67,7 +67,7 @@ One of the key advantages of oxidize-postal over pypostal is GIL-free parallel p
 
 ### When Parallel Processing Helps
 
-arallel processing provides the most benefit when combined with slower I/O operations:
+Parallel processing provides the most benefit when combined with slower I/O operations:
 
 **Great for parallel processing:**
 ```python
