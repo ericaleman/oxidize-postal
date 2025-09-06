@@ -1,6 +1,6 @@
 [project]
 name = "oxidize-postal"
-version = "0.1.0"
+version = "0.1.1"
 description = "High-performance postal address parser and normalizer using libpostal with Rust bindings"
 authors = [
     {name = "Eric Aleman", email = "eric@example.com"}
